@@ -55,7 +55,9 @@ body, html {
              .task-stats-sidebar {
                display: flex;
                flex-direction: column;
-               gap: 10px;
+               margin-top: 100px;
+               gap: 40px;
+               
              }
              
              
@@ -87,7 +89,7 @@ body, html {
              /* Main View */
              .main-view {
                flex: 1;
-               background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); /* Beachy image */
+               background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e'); 
                background-size: cover;
                background-position: center;
                position: relative;

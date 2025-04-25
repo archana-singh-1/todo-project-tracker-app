@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './TaskManager.css';
-
 function TaskManager() {
   const [tasks, setTasks] = useState([]);
   const [filter, setFilter] = useState('total');
@@ -14,7 +13,6 @@ function TaskManager() {
       setText('');
     }
   };
-
   const toggleTask = (id) => {
     setTasks(tasks.map(task => task.id === id ? { ...task, completed: !task.completed } : task));
   };
@@ -28,11 +26,9 @@ function TaskManager() {
     if (filter === 'pending') return !task.completed;
     return true;
   });
-
   const total = tasks.length;
   const completed = tasks.filter(t => t.completed).length;
   const pending = total - completed;
-
   return (
     <div className="app-container">
       <div className="sidebar">
@@ -49,11 +45,11 @@ function TaskManager() {
             <button>🌞 My day</button>
             <button>📅 This week</button>
             <button>🗓️ This month</button>
-            <div className="task-stats">
+            {/* <div className="task-stats"> */}
             <button onClick={() => setFilter('total')}>Total: {total}</button>
             <button onClick={() => setFilter('completed')}>Completed: {completed}</button>
             <button onClick={() => setFilter('pending')}>Pending: {pending}</button>
-          </div>
+          {/* </div> */}
           </div>
         </div>
         <button className="logout">⎋ Logout</button>
@@ -97,5 +93,5 @@ function TaskManager() {
     </div>
   );
 }
-
 export default TaskManager;
+
