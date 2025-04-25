@@ -7,8 +7,8 @@ function App(){
           <h1>📋 Project Task Tracker</h1>
       <TaskManager />
 
-    {/* <From/> */}
     </>
+
   )
 }
 export default App;
