@@ -1,9 +1,14 @@
+// import From from './Components/Form.jsx'
+import './App.css';
+import TaskManager from './Components/TaskManager.jsx';
 function App(){
   return(
-    <div>App
-      <h1>Hello</h1>
-      <p>I am Priyanka Mishra</p>
-    </div>
+    <>
+          <h1>📋 Project Task Tracker</h1>
+      <TaskManager />
+
+    </>
+
   )
 }
 export default App;
