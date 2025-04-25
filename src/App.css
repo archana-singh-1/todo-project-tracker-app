@@ -1,0 +1,97 @@
+body {
+               margin: 0;
+               font-family: 'Segoe UI', sans-serif;
+               background-color: #f2f4f8;
+               color: #333;
+             }
+             
+             .app {
+               max-width: 600px;
+               margin: 40px auto;
+               padding: 30px;
+               background: #ffffff;
+               border-radius: 12px;
+               box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+               text-align: center;
+             }
+             
+             h1 {
+               font-size: 2rem;
+               margin-bottom: 20px;
+             }
+             
+             .task-form {
+               display: flex;
+               justify-content: center;
+               margin-bottom: 20px;
+             }
+             
+             .task-form input {
+               padding: 10px;
+               font-size: 1rem;
+               width: 70%;
+               border: 1px solid #ccc;
+               border-radius: 6px;
+               margin-right: 10px;
+             }
+             
+             .task-form button {
+               padding: 10px 16px;
+               background-color: #007bff;
+               border: none;
+               color: white;
+               border-radius: 6px;
+               cursor: pointer;
+             }
+             
+             .task-form button:hover {
+               background-color: #0056b3;
+             }
+             
+             .task-stats {
+               display: flex;
+               justify-content: space-around;
+               margin-bottom: 20px;
+               font-weight: bold;
+               background-color: #eef1f5;
+               padding: 10px;
+               border-radius: 8px;
+             }
+             
+             .task-list {
+               list-style-type: none;
+               padding: 0;
+             }
+             
+             .task-list li {
+               background: #f9f9f9;
+               border: 1px solid #ddd;
+               margin-bottom: 10px;
+               padding: 12px;
+               display: flex;
+               justify-content: space-between;
+               align-items: center;
+               border-radius: 6px;
+               transition: background-color 0.2s ease;
+             }
+             
+             .task-list li.completed {
+               background-color: #e0f7e9;
+               text-decoration: line-through;
+               color: #777;
+             }
+             
+             .task-list li button {
+               background: transparent;
+               border: none;
+               cursor: pointer;
+               font-size: 1.1rem;
+             }
+             
+             .no-tasks {
+               color: #888;
+               font-style: italic;
+               margin-top: 20px;
+             }
+             
+             
