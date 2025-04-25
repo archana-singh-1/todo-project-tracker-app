@@ -6,8 +6,8 @@ function TaskForm({ onAdd }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (text.trim()) {
-      onAdd(text);  // Call the onAdd function passed as prop
-      setText('');  // Clear input field after adding
+      onAdd(text);  
+      setText('');  
     }
   };
 
@@ -17,9 +17,9 @@ function TaskForm({ onAdd }) {
         type="text"
         placeholder="Add a new task..."
         value={text}
-        onChange={(e) => setText(e.target.value)}  // Update text state as user types
+        onChange={(e) => setText(e.target.value)}  
       />
-      <button type="submit" disabled={!text.trim()}>Add</button>  {/* Disabled if no input */}
+      <button type="submit" disabled={!text.trim()}>Add</button>
     </form>
   );
 }
