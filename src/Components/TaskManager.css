@@ -105,8 +105,14 @@ body, html {
                color: white;
                width: 80%;
                max-width: 600px;
+              margin-top: 50%;
              }
-             
+              .list-div{
+                /* border:  1px solid black; */
+                  position: relative;
+                  bottom: 45%;
+                
+              }
              .task-form {
                display: flex;
                margin: 20px 0;
@@ -150,7 +156,6 @@ body, html {
                margin-bottom: 10px;
                color: #000;
              }
-             
              .task-list li.completed {
                text-decoration: line-through;
                background-color: #d4edda;
@@ -175,6 +180,7 @@ body, html {
              .task-list li button:hover {
                background-color: #d12e3d;
              }
+             
              
              @media (max-width: 768px) {
                .app-container {
