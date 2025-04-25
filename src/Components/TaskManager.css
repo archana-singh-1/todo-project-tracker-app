@@ -45,7 +45,6 @@ body, html {
                font-size: 0.9rem;
                color: #666;
              }
-             
              .search {
                padding: 10px;
                border-radius: 10px;
@@ -58,6 +57,7 @@ body, html {
                flex-direction: column;
                gap: 10px;
              }
+             
              
              .task-stats-sidebar button {
                padding: 10px;
