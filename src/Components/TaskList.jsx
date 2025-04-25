@@ -13,11 +13,11 @@ function TaskList({ tasks, onToggle, onDelete }) {
             <input
               type="checkbox"
               checked={task.completed}
-              onChange={() => onToggle(task.id)}  // Toggle task completion
+              onChange={() => onToggle(task.id)} 
             />
             {task.text}
           </label>
-          <button onClick={() => onDelete(task.id)}>❌</button>  {/* Delete task */}
+          <button onClick={() => onDelete(task.id)}>❌</button> 
         </li>
       ))}
     </ul>
