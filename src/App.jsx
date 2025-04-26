@@ -4,11 +4,9 @@ import TaskManager from './Components/TaskManager.jsx';
 function App(){
   return(
     <>
-          <h1>📋 Project Task Tracker</h1>
+      <h1>📋 Project Task Tracker</h1>
       <TaskManager />
-
     </>
-
   )
 }
 export default App;
